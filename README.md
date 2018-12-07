@@ -25,7 +25,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Basic usage
+
+``` ruby
+class Color
+  include Rekkyo::Type
+
+  member :RED
+  member :GREEN
+  member :BLUE
+end
+
+```
+
+### Custom value
+
+``` ruby
+class Color
+  include Rekkyo::Type
+
+  member :RED   "#FF0000"
+  member :GREEN "#00FF00"
+  member :BLUE  "#0000FF"
+end
+```
 
 ## Development
 
