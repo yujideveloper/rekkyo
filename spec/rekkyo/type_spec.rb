@@ -29,6 +29,12 @@ RSpec.describe Rekkyo::Type do
         it { is_expected.to be false }
       end
     end
+
+    describe "#to_s" do
+      subject { described_class.new(:RED, :"#FF0000").to_s }
+
+      it { is_expected.to eq "#FF0000" }
+    end
   end
 
   describe Rekkyo::Type::ClassMethods do
