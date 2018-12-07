@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/yujideveloper/rekkyo.svg?branch=master)](https://travis-ci.org/yujideveloper/rekkyo)
 [![Maintainability](https://api.codeclimate.com/v1/badges/37d6334cedf5b04af831/maintainability)](https://codeclimate.com/github/yujideveloper/rekkyo/maintainability)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rekkyo`. To experiment with that code, run `bin/console` for an interactive prompt.
+Rekkyo is a gem for defining an enumerated type in Ruby.
 
-TODO: Delete this and the text above, and describe your gem
+This gem is inspired by [`Ruby::Enum`](https://github.com/dblock/ruby-enum) and [`Enum`](https://github.com/LIQIDTechnology/enum_class).
 
 ## Installation
 

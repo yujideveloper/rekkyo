@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Yuji Hanamura"]
   spec.email         = ["yuji.developer@gmail.com"]
 
-  spec.summary       = "A enumerated type in Ruby."
-  spec.description   = "A enumerated type in Ruby."
+  spec.summary       = "An enumerated type in Ruby."
+  spec.description   = "Rekkyo is a gem for defining an enumerated type in Ruby."
   spec.homepage      = "https://github.com/yujideveloper/rekkyo"
   spec.license       = "MIT"
 
