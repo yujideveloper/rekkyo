@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
+begin
+  require "active_support"
+  require "active_support/core_ext/object/json"
+rescue LoadError # rubocop:disable Lint/HandleExceptions
+end
 require "rekkyo"
 
 RSpec.configure do |config|

@@ -35,6 +35,18 @@ RSpec.describe Rekkyo::Type do
 
       it { is_expected.to eq "#FF0000" }
     end
+
+    if defined? ActiveSupport
+      describe "#as_json" do
+        let(:member) { described_class.new(:RED, "RED".dup) }
+
+        it "delegates to `value.as_json`" do
+          options = {}
+          expect(member.value).to receive(:as_json).with(options).and_call_original
+          expect(member.as_json(options)).to eq "RED"
+        end
+      end
+    end
   end
 
   describe Rekkyo::Type::ClassMethods do
