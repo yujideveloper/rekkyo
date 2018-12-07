@@ -61,7 +61,7 @@ RSpec.describe Rekkyo::Type do
     describe "#member" do
       def define(*args)
         dummy_class.instance_exec do
-          member *args
+          member(*args)
         end
       end
 
