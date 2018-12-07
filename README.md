@@ -44,9 +44,9 @@ end
 class Color
   include Rekkyo::Type
 
-  member :RED   "#FF0000"
-  member :GREEN "#00FF00"
-  member :BLUE  "#0000FF"
+  member :RED,   "#FF0000"
+  member :GREEN, "#00FF00"
+  member :BLUE,  "#0000FF"
 end
 ```
 
