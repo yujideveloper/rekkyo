@@ -16,6 +16,12 @@ module Rekkyo
       def to_s
         self.value.to_s
       end
+
+      if defined? ActiveSupport
+        def as_json(*args)
+          self.to_s.as_json(*args)
+        end
+      end
     end
 
     class << self
