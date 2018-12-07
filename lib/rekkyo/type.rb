@@ -41,7 +41,7 @@ module Rekkyo
         key = key.upcase.to_sym
 
         raise DuplicateMemberError if self.const_defined?(key, false) ||
-                                   @members.any? { |m| m.match? value }
+                                      @members.any? { |m| m.match? value }
 
         m = self::Member.new(key, value).freeze
         @members << m
