@@ -68,18 +68,18 @@ RSpec.describe Rekkyo::Type do
       end
 
       context "when already defined key is specified" do
-        it "raises DuplicateKeyError" do
+        it "raises DuplicateMemberError" do
           define(:RED)
 
-          expect { define(:RED) }.to raise_error Rekkyo::DuplicateKeyError
+          expect { define(:RED) }.to raise_error Rekkyo::DuplicateMemberError
         end
       end
 
       context "when already defined value is specified" do
-        it "raises DuplicateKeyError" do
+        it "raises DuplicateMemberError" do
           define(:RED, "foo")
 
-          expect { define(:BLUE, "foo") }.to raise_error Rekkyo::DuplicateKeyError
+          expect { define(:BLUE, "foo") }.to raise_error Rekkyo::DuplicateMemberError
         end
       end
     end

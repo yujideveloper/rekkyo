@@ -4,7 +4,7 @@ require "rekkyo/version"
 
 module Rekkyo
   class Error < StandardError; end
-  class DuplicateKeyError < Error
+  class DuplicateMemberError < Error
   end
 end
 

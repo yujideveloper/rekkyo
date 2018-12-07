@@ -40,7 +40,7 @@ module Rekkyo
         value = key if value == UNSPECIFIED
         key = key.upcase.to_sym
 
-        raise DuplicateKeyError if self.const_defined?(key, false) ||
+        raise DuplicateMemberError if self.const_defined?(key, false) ||
                                    @members.any? { |m| m.match? value }
 
         m = self::Member.new(key, value).freeze
