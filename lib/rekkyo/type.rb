@@ -18,8 +18,8 @@ module Rekkyo
       end
 
       if defined? ActiveSupport
-        def as_json(*args)
-          self.to_s.as_json(*args)
+        def as_json(options = nil)
+          self.to_s.as_json(options)
         end
       end
     end
