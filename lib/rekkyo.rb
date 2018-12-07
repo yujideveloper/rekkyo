@@ -4,5 +4,8 @@ require "rekkyo/version"
 
 module Rekkyo
   class Error < StandardError; end
-  # Your code goes here...
+  class DuplicateKeyError < Error
+  end
 end
+
+require "rekkyo/type"
