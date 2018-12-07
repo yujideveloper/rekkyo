@@ -36,6 +36,7 @@ class Color
   member :BLUE
 end
 
+{ color: Color::RED }.to_json # => "{\"color\":\"RED\"}
 ```
 
 ### Custom value
@@ -48,6 +49,8 @@ class Color
   member :GREEN, "#00FF00"
   member :BLUE,  "#0000FF"
 end
+
+{ color: Color::RED }.to_json # => "{\"color\":\"#FF0000\"}"
 ```
 
 ## Development
