@@ -38,7 +38,7 @@ RSpec.describe Rekkyo::Type do
 
     if defined? ActiveSupport
       describe "#as_json" do
-        let(:member) { described_class.new(:RED, "RED".dup) }
+        let(:member) { described_class.new(:RED, +"RED") }
 
         it "delegates to `value.as_json`" do
           options = {}
