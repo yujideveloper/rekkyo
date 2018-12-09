@@ -1,6 +1,6 @@
 # Rekkyo
 
-[![Gem Version](https://badge.fury.io/rb/rekkyo.svg)](https://badge.fury.io/rb/rekkyo):
+[![Gem Version](https://badge.fury.io/rb/rekkyo.svg)](https://badge.fury.io/rb/rekkyo)
 [![Build Status](https://travis-ci.org/yujideveloper/rekkyo.svg?branch=master)](https://travis-ci.org/yujideveloper/rekkyo)
 [![Maintainability](https://api.codeclimate.com/v1/badges/37d6334cedf5b04af831/maintainability)](https://codeclimate.com/github/yujideveloper/rekkyo/maintainability)
 
