@@ -2,7 +2,7 @@
 
 RSpec.describe Rekkyo::Type do
   describe Rekkyo::Type::Member do
-    describe "match?" do
+    describe "#match?" do
       subject { described_class.new(:RED, "RED").match?(other) }
 
       context "in same member" do
