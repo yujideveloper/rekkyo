@@ -17,6 +17,30 @@ RSpec.describe Rekkyo::Type do
         it { is_expected.to be false }
       end
 
+      context "in String class and same value" do
+        let(:other) { "RED" }
+
+        it { is_expected.to be true }
+      end
+
+      context "in String class and other value" do
+        let(:other) { "BLUE" }
+
+        it { is_expected.to be false }
+      end
+
+      context "in Symbol class and same value" do
+        let(:other) { :RED }
+
+        it { is_expected.to be true }
+      end
+
+      context "in Symbol class and other value" do
+        let(:other) { :BLUE }
+
+        it { is_expected.to be false }
+      end
+
       context "in other class and same value" do
         let(:other) { "RED" }
 
