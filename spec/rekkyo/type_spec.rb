@@ -30,6 +30,12 @@ RSpec.describe Rekkyo::Type do
       end
     end
 
+    describe "#===" do
+      subject { described_class.instance_method(:===) }
+
+      it { is_expected.to eq described_class.instance_method(:match?) }
+    end
+
     describe "#to_s" do
       subject { described_class.new(:RED, :"#FF0000").to_s }
 
