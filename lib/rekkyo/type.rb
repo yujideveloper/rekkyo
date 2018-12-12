@@ -47,7 +47,13 @@ module Rekkyo
 
         m = self::Member.new(key, value).freeze
         @members << m
+
         self.const_set(key, m)
+
+        method_name = :"#{key.downcase}?"
+        self::Member.class_exec do
+          define_method(method_name) { self.match?(m) }
+        end
       end
 
       def all

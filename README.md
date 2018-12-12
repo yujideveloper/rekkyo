@@ -38,6 +38,9 @@ class Color
 end
 
 { color: Color::RED }.to_json # => "{\"color\":\"RED\"}
+
+Color::RED.red?   # => true
+Color::BLUE.blue? # => false
 ```
 
 ### Custom value
