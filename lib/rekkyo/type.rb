@@ -13,6 +13,8 @@ module Rekkyo
         end
       end
 
+      alias_method :===, :match?
+
       def to_s
         self.value.to_s
       end
