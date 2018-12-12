@@ -41,6 +41,24 @@ end
 
 Color::RED.red?   # => true
 Color::BLUE.blue? # => false
+
+Color::RED == Color::RED   # => true
+Color::RED == Color::BLUE  # => false
+Color::RED == :RED         # => false
+Color::RED == "RED"        # => false
+
+Color::RED === Color::RED  # => true
+Color::RED === Color::BLUE # => false
+Color::RED === :RED        # => true
+Color::RED === "RED"       # => true
+
+case "RED"
+when Color::RED   then "#FF0000"
+when Color::BLUE  then "#00FF00"
+when Color::GREEN then "#0000FF"
+else                   "Unkown"
+end
+# => "#FF0000"
 ```
 
 ### Custom value
@@ -55,6 +73,24 @@ class Color
 end
 
 { color: Color::RED }.to_json # => "{\"color\":\"#FF0000\"}"
+
+Color::RED == Color::RED   # => true
+Color::RED == Color::BLUE  # => false
+Color::RED == :"#FF0000"   # => false
+Color::RED == "#FF0000"    # => false
+
+Color::RED === Color::RED  # => true
+Color::RED === Color::BLUE # => false
+Color::RED === :"#FF0000"  # => true
+Color::RED === "#FF0000"   # => true
+
+case "#FF0000"
+when Color::RED   then "RED"
+when Color::BLUE  then "BLUE"
+when Color::GREEN then "GREEN"
+else                   "Unkown"
+end
+# => "RED"
 ```
 
 ## Development
