@@ -4,7 +4,20 @@ require "set"
 
 module Rekkyo
   module Type
-    Member = Struct.new(:key, :value) do
+    class Member
+      attr_reader :key, :value
+
+      def initialize(key, value)
+        @key = key
+        @value = value
+      end
+
+      def ==(other)
+        self.class == other.class &&
+          self.key == other.key &&
+          self.value == other.value
+      end
+
       def match?(value)
         case value
         when self.class
@@ -16,7 +29,11 @@ module Rekkyo
         end
       end
 
-      alias_method :===, :match?
+      alias === match?
+
+      def inspect
+        "#{self.class.name || ''}::#{key}(#{value.inspect})"
+      end
 
       def to_s
         self.value.to_s

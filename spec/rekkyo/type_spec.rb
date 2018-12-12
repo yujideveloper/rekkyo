@@ -2,6 +2,40 @@
 
 RSpec.describe Rekkyo::Type do
   describe Rekkyo::Type::Member do
+    describe "#initialize" do
+      subject { described_class.new(:RED, "#FF0000") }
+
+      it { is_expected.to have_attributes key: :RED, value: "#FF0000" }
+    end
+
+    describe "#==" do
+      subject { described_class.new(:RED, "#FF0000") == other }
+
+      context "in case of same class, same key, same value" do
+        let(:other) { described_class.new(:RED, "#FF0000") }
+
+        it { is_expected.to be true }
+      end
+
+      context "in case of same class, other key, same value" do
+        let(:other) { described_class.new(:red, "#FF0000") }
+
+        it { is_expected.to be false }
+      end
+
+      context "in case of same class, same key, other value" do
+        let(:other) { described_class.new(:RED, "RED") }
+
+        it { is_expected.to be false }
+      end
+
+      context "in case of other class" do
+        let(:other) { Struct.new(:key, :value).new(:RED, "#FF0000") }
+
+        it { is_expected.to be false }
+      end
+    end
+
     describe "#match?" do
       subject { described_class.new(:RED, "RED").match?(other) }
 
@@ -58,6 +92,12 @@ RSpec.describe Rekkyo::Type do
       subject { described_class.instance_method(:===) }
 
       it { is_expected.to eq described_class.instance_method(:match?) }
+    end
+
+    describe "#inspect" do
+      subject { described_class.new(:RED, "#FF0000").inspect }
+
+      it { is_expected.to eq 'Rekkyo::Type::Member::RED("#FF0000")' }
     end
 
     describe "#to_s" do
