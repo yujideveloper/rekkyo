@@ -72,6 +72,9 @@ class Color
   member :BLUE,  "#0000FF"
 end
 
+Color::RED.red?   # => true
+Color::BLUE.blue? # => false
+
 { color: Color::RED }.to_json # => "{\"color\":\"#FF0000\"}"
 
 Color::RED == Color::RED   # => true
