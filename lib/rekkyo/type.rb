@@ -6,8 +6,11 @@ module Rekkyo
   module Type
     Member = Struct.new(:key, :value) do
       def match?(value)
-        if value.is_a? self.class
+        case value
+        when self.class
           self == value
+        when String, Symbol
+          self.value.to_s == value.to_s
         else
           self.value == value
         end
