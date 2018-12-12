@@ -1,5 +1,8 @@
 ## Unreleased
 
+
+## 0.2.0 (2018-12-12)
+
 ### Changes
 
 * Add `Rekkyo::Type::Member#===` as an alias of `Rekkyo::Type::Member#match?`
