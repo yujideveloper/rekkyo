@@ -42,17 +42,16 @@ module Rekkyo
         value = key if value == UNSPECIFIED
         key = key.upcase.to_sym
 
-        raise DuplicateMemberError if self.const_defined?(key, false) ||
-                                      @members.any? { |m| m.match? value }
+        validate_member(key, value)
 
-        m = self::Member.new(key, value).freeze
-        @members << m
+        self::Member.new(key, value).freeze.tap do |m|
+          @members << m
 
-        self.const_set(key, m)
+          self.const_set(key, m)
 
-        method_name = :"#{key.downcase}?"
-        self::Member.class_exec do
-          define_method(method_name) { self.match?(m) }
+          self::Member.class_exec do
+            define_method(:"#{key.downcase}?") { self.match?(m) }
+          end
         end
       end
 
@@ -61,6 +60,13 @@ module Rekkyo
       end
 
       alias members all
+
+      private
+
+      def validate_member(key, value)
+        raise DuplicateMemberError if self.const_defined?(key, false) ||
+                                      @members.any? { |m| m.match? value }
+      end
     end
   end
 end
