@@ -8,6 +8,8 @@
   * [PR#2](https://github.com/yujideveloper/rekkyo/pull/2)
 * Improve matching with String/Symbol
   * [PR#3](https://github.com/yujideveloper/rekkyo/pull/3)
+* Re-implement `Rekkyo::Type::Member` using PORO
+  * [PR#4](https://github.com/yujideveloper/rekkyo/pull/4)
 
 ### Misc
 
