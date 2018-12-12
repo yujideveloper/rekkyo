@@ -4,31 +4,6 @@ require "set"
 
 module Rekkyo
   module Type
-    Member = Struct.new(:key, :value) do
-      def match?(value)
-        case value
-        when self.class
-          self == value
-        when String, Symbol
-          self.value.to_s == value.to_s
-        else
-          self.value == value
-        end
-      end
-
-      alias_method :===, :match?
-
-      def to_s
-        self.value.to_s
-      end
-
-      if defined? ActiveSupport
-        def as_json(options = nil)
-          self.to_s.as_json(options)
-        end
-      end
-    end
-
     class << self
       def included(klass)
         klass.const_set(:Member, Class.new(Member))
@@ -73,3 +48,5 @@ module Rekkyo
     end
   end
 end
+
+require "rekkyo/type/member"
