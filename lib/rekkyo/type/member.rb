@@ -16,14 +16,14 @@ module Rekkyo
           self.value == other.value
       end
 
-      def match?(value)
-        case value
+      def match?(other)
+        case other
         when self.class
-          self == value
+          self == other
         when String, Symbol
-          self.value.to_s == value.to_s
+          self.value.to_s == other.to_s
         else
-          self.value == value
+          self.value == other
         end
       end
 
