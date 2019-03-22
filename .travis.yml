@@ -10,4 +10,3 @@ gemfile:
   - Gemfile
   - gemfiles/activesupport_5.1.gemfile
   - gemfiles/activesupport_5.2.gemfile
-before_install: gem install bundler -v 1.17.1
