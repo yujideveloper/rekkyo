@@ -1,5 +1,15 @@
 ## Unreleased
 
+### Changes
+
+* Add support Ruby 2.6
+  * [PR#5](https://github.com/yujideveloper/rekkyo/pull/5)
+
+### Misc
+
+* Add examples
+* Relax bundler version
+
 
 ## 0.2.0 (2018-12-12)
 
