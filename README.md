@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/yujideveloper/rekkyo.svg?branch=master)](https://travis-ci.org/yujideveloper/rekkyo)
 [![Maintainability](https://api.codeclimate.com/v1/badges/37d6334cedf5b04af831/maintainability)](https://codeclimate.com/github/yujideveloper/rekkyo/maintainability)
 
-Rekkyo is a gem for defining an enumerated type in Ruby.
+Rekkyo (列挙) is a gem for defining an enumerated type in Ruby.
 
 This gem is inspired by [`Ruby::Enum`](https://github.com/dblock/ruby-enum) and [`Enum`](https://github.com/LIQIDTechnology/enum_class).
 
