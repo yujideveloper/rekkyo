@@ -17,4 +17,4 @@ matrix:
     - rvm: 2.4.6
       gemfile: gemfiles/activesupport_6.0.gemfile
   allow_failures:
-    rvm: 2.7.0-preview1
+    - rvm: 2.7.0-preview1
