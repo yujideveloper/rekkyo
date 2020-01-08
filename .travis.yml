@@ -16,3 +16,7 @@ matrix:
   exclude:
     - rvm: 2.4.6
       gemfile: gemfiles/activesupport_6.0.gemfile
+    - rvm: 2.7.0
+      gemfile: gemfiles/activesupport_5.1.gemfile
+    - rvm: 2.7.0
+      gemfile: gemfiles/activesupport_5.2.gemfile
