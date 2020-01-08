@@ -4,7 +4,7 @@ require "bundler/setup"
 begin
   require "active_support"
   require "active_support/core_ext/object/json"
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end
 require "rekkyo"
 
