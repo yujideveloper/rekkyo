@@ -6,6 +6,8 @@
   * [PR#8](https://github.com/yujideveloper/rekkyo/pull/8)
 * Add Ruby 2.7 support
   * [PR#8](https://github.com/yujideveloper/rekkyo/pull/9)
+* Add Ruby 3.0 and ActiveSupport 6.1 support
+  * [PR#8](https://github.com/yujideveloper/rekkyo/pull/12)
 
 ### Misc
 
