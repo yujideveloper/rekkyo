@@ -7,6 +7,11 @@
 * Add Ruby 2.7 support
   * [PR#8](https://github.com/yujideveloper/rekkyo/pull/9)
 
+### Misc
+
+* Migrate CI from Travis CI from GitHub Actions
+  * [PR#8](https://github.com/yujideveloper/rekkyo/pull/11)
+
 
 ## 1.0.0 (2019-04-08)
 
