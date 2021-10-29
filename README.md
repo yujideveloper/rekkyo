@@ -1,7 +1,7 @@
 # Rekkyo
 
 [![Gem Version](https://badge.fury.io/rb/rekkyo.svg)](https://badge.fury.io/rb/rekkyo)
-[![Build Status](https://travis-ci.org/yujideveloper/rekkyo.svg?branch=master)](https://travis-ci.org/yujideveloper/rekkyo)
+[![Build](https://github.com/yujideveloper/rekkyo/actions/workflows/ruby.yml/badge.svg)](https://github.com/yujideveloper/rekkyo/actions/workflows/ruby.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/37d6334cedf5b04af831/maintainability)](https://codeclimate.com/github/yujideveloper/rekkyo/maintainability)
 
 Rekkyo (列挙) is a gem for defining an enumerated type in Ruby.
