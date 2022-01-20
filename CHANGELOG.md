@@ -11,16 +11,22 @@
 * Drop Ruby 2.4 support
   * [PR#14](https://github.com/yujideveloper/rekkyo/pull/14)
 * Call `super` when `Rekkyo::Type` is included
+  * [PR#16](https://github.com/yujideveloper/rekkyo/pull/16)
 * Add Ruby 3.1 and ActiveSupport 3.1 support
+  * [PR#17](https://github.com/yujideveloper/rekkyo/pull/17)
 * Override `freeze` method to freeze enum members
+  * [PR#18](https://github.com/yujideveloper/rekkyo/pull/18)
 * Drop ActiveSupport 5.1 support
+  * [PR#19](https://github.com/yujideveloper/rekkyo/pull/19)
 * Split `Rekkyo::Type::ClassMethods` module into role-specific modules
+  * [PR#19](https://github.com/yujideveloper/rekkyo/pull/20)
 
 ### Misc
 
 * Migrate CI from Travis CI from GitHub Actions
   * [PR#11](https://github.com/yujideveloper/rekkyo/pull/11)
 * Require MFA to release gem
+  * [PR#19](https://github.com/yujideveloper/rekkyo/pull/21)
 
 
 ## 1.0.0 (2019-04-08)
