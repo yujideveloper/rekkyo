@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.5
   Exclude:
     - gemfiles/*
+  NewCops: enable
 
 Style/AsciiComments:
   Enabled: false
