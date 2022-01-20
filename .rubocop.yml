@@ -25,6 +25,7 @@ Layout/LineLength:
 
 Metrics/BlockLength:
   Exclude:
+    - rekkyo.gemspec
     - spec/**/*
 
 Metrics/MethodLength:
