@@ -1,5 +1,7 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
+  Exclude:
+    - gemfiles/*
 
 Style/AsciiComments:
   Enabled: false
