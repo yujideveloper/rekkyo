@@ -9,11 +9,12 @@ module Rekkyo
         super
         klass.const_set(:Member, Class.new(Member))
         klass.instance_variable_set(:@members, Set.new)
-        klass.extend(ClassMethods)
+        klass.extend(DSLMethods)
+        klass.extend(EnumMethods)
       end
     end
 
-    module ClassMethods
+    module DSLMethods
       UNSPECIFIED = Object.new.freeze
       private_constant :UNSPECIFIED
 
@@ -34,6 +35,15 @@ module Rekkyo
         end
       end
 
+      private
+
+      def validate_member(key, value)
+        raise DuplicateMemberError if self.const_defined?(key, false) ||
+                                      @members.any? { |m| m.match? value }
+      end
+    end
+
+    module EnumMethods
       def all
         @members.dup
       end
@@ -43,13 +53,6 @@ module Rekkyo
       def freeze
         @members.freeze
         super
-      end
-
-      private
-
-      def validate_member(key, value)
-        raise DuplicateMemberError if self.const_defined?(key, false) ||
-                                      @members.any? { |m| m.match? value }
       end
     end
   end

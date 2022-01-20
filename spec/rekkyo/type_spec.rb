@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Rekkyo::Type do
-  describe Rekkyo::Type::ClassMethods do
+  describe Rekkyo::Type::DSLMethods do
     let(:dummy_member_class) { Class.new(Rekkyo::Type::Member) }
     let(:dummy_class) do
       c = Class.new { @members = Set.new }
@@ -70,6 +70,16 @@ RSpec.describe Rekkyo::Type do
         end
       end
     end
+  end
+
+  describe Rekkyo::Type::EnumMethods do
+    let(:dummy_member_class) { Class.new(Rekkyo::Type::Member) }
+    let(:dummy_class) do
+      c = Class.new { @members = Set.new }
+      c.const_set(:Member, dummy_member_class)
+      c.extend described_class
+      c
+    end
 
     describe "#freeze" do
       it "freeze @members" do
@@ -96,10 +106,16 @@ RSpec.describe Rekkyo::Type do
       it { is_expected.to be < Rekkyo::Type::Member }
     end
 
-    describe "class methods" do
+    describe "dsl methods" do
       subject { dummy_class.singleton_class }
 
-      it { is_expected.to include Rekkyo::Type::ClassMethods }
+      it { is_expected.to include Rekkyo::Type::DSLMethods }
+    end
+
+    describe "enum methods" do
+      subject { dummy_class.singleton_class }
+
+      it { is_expected.to include Rekkyo::Type::EnumMethods }
     end
   end
 end
