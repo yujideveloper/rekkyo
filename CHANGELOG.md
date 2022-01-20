@@ -10,6 +10,7 @@
   * [PR#12](https://github.com/yujideveloper/rekkyo/pull/12)
 * Drop Ruby 2.4 support
   * [PR#14](https://github.com/yujideveloper/rekkyo/pull/14)
+* Call `super` when `Rekkyo::Type` is included
 
 ### Misc
 
