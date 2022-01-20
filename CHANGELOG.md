@@ -14,6 +14,7 @@
 * Add Ruby 3.1 and ActiveSupport 3.1 support
 * Override `freeze` method to freeze enum members
 * Drop ActiveSupport 5.1 support
+* Split `Rekkyo::Type::ClassMethods` module into role-specific modules
 
 ### Misc
 
