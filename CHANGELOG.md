@@ -20,6 +20,7 @@
 
 * Migrate CI from Travis CI from GitHub Actions
   * [PR#11](https://github.com/yujideveloper/rekkyo/pull/11)
+* Require MFA to release gem
 
 
 ## 1.0.0 (2019-04-08)
