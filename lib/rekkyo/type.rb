@@ -12,7 +12,6 @@ module Rekkyo
         klass.extend(DSLMethods)
         klass.extend(EnumMethods)
       end
-
     end
   end
 end
