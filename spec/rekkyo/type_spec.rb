@@ -70,6 +70,14 @@ RSpec.describe Rekkyo::Type do
         end
       end
     end
+
+    describe "#freeze" do
+      it "freeze @members" do
+        expect(dummy_class.instance_variable_get(:@members)).not_to be_frozen
+        dummy_class.freeze
+        expect(dummy_class.instance_variable_get(:@members)).to be_frozen
+      end
+    end
   end
 
   describe ".included" do

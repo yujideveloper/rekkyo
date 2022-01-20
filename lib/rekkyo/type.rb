@@ -40,6 +40,11 @@ module Rekkyo
 
       alias members all
 
+      def freeze
+        @members.freeze
+        super
+      end
+
       private
 
       def validate_member(key, value)
