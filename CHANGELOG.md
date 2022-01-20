@@ -5,15 +5,16 @@
 * Add ActiveSupport 6.0 support
   * [PR#8](https://github.com/yujideveloper/rekkyo/pull/8)
 * Add Ruby 2.7 support
-  * [PR#8](https://github.com/yujideveloper/rekkyo/pull/9)
+  * [PR#9](https://github.com/yujideveloper/rekkyo/pull/9)
 * Add Ruby 3.0 and ActiveSupport 6.1 support
-  * [PR#8](https://github.com/yujideveloper/rekkyo/pull/12)
+  * [PR#12](https://github.com/yujideveloper/rekkyo/pull/12)
 * Drop Ruby 2.4 support
+  * [PR#14](https://github.com/yujideveloper/rekkyo/pull/14)
 
 ### Misc
 
 * Migrate CI from Travis CI from GitHub Actions
-  * [PR#8](https://github.com/yujideveloper/rekkyo/pull/11)
+  * [PR#11](https://github.com/yujideveloper/rekkyo/pull/11)
 
 
 ## 1.0.0 (2019-04-08)
