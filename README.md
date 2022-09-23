@@ -6,7 +6,7 @@
 
 Rekkyo (列挙) is a gem for defining an enumerated type in Ruby.
 
-This gem is inspired by [`Ruby::Enum`](https://github.com/dblock/ruby-enum) and [`Enum`](https://github.com/LIQIDTechnology/enum_class).
+This gem is inspired by [`ruby-enum`](https://rubygems.org/gems/ruby-enum) and [`enum_class`](https://rubygems.org/gems/enum_class).
 
 ## Installation
 
