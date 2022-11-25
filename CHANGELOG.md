@@ -1,5 +1,8 @@
 ## Unreleased
 
+
+## 1.1.0 (2022-11-25)
+
 ### Changes
 
 * Add ActiveSupport 6.0 support
