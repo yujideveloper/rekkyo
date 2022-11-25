@@ -30,6 +30,8 @@
   * [PR#11](https://github.com/yujideveloper/rekkyo/pull/11)
 * Require MFA to release gem
   * [PR#19](https://github.com/yujideveloper/rekkyo/pull/21)
+* Fix RuboCop offenses
+  * [PR#22](https://github.com/yujideveloper/rekkyo/pull/22)
 
 
 ## 1.0.0 (2019-04-08)
