@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Misc
+* Test without activesupport
+  * [PR#23](https://github.com/yujideveloper/rekkyo/pull/23)
+
 
 ## 1.1.0 (2022-11-25)
 
