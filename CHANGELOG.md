@@ -12,7 +12,7 @@
   * [PR#14](https://github.com/yujideveloper/rekkyo/pull/14)
 * Call `super` when `Rekkyo::Type` is included
   * [PR#16](https://github.com/yujideveloper/rekkyo/pull/16)
-* Add Ruby 3.1 and ActiveSupport 3.1 support
+* Add Ruby 3.1 and ActiveSupport 7.0 support
   * [PR#17](https://github.com/yujideveloper/rekkyo/pull/17)
 * Override `freeze` method to freeze enum members
   * [PR#18](https://github.com/yujideveloper/rekkyo/pull/18)
