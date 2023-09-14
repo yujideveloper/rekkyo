@@ -111,8 +111,9 @@ RSpec.describe Rekkyo::Type::Member do
 
       it "delegates to `value.as_json`" do
         options = {}
-        expect(member.value).to receive(:as_json).with(options).and_call_original
+        allow(member.value).to receive(:as_json).with(options).and_call_original
         expect(member.as_json(options)).to eq "RED"
+        expect(member.value).to have_received(:as_json).with(options).once
       end
     end
   end
