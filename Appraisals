@@ -1,14 +1,6 @@
 # frozen_string_literal: true
 
-appraise "activesupport_none" do
-end
-
-appraise "activesupport_5.2" do
-  gem "activesupport", "~> 5.2.0"
-end
-
-appraise "activesupport_6.0" do
-  gem "activesupport", "~> 6.0.0"
+appraise "activesupport_none" do # rubocop:disable Lint/EmptyBlock
 end
 
 appraise "activesupport_6.1" do

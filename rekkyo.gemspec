@@ -31,12 +31,4 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.required_ruby_version = ">= 3.0"
-
-  spec.add_development_dependency "appraisal", ">= 2.5.0"
-  spec.add_development_dependency "bundler", ">= 2.2.3"
-  spec.add_development_dependency "pry", ">= 0.14.2"
-  spec.add_development_dependency "pry-doc", ">= 1.4.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.12"
-  spec.add_development_dependency "rubocop", ">= 1.56.3"
 end
