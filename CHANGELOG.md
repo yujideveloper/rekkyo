@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Changes
+* Add Ruby 3.2 support and drop Ruby 2.x support
+  * [PR#25](https://github.com/yujideveloper/rekkyo/pull/25)
+
 ### Misc
 * Test without activesupport
   * [PR#23](https://github.com/yujideveloper/rekkyo/pull/23)
