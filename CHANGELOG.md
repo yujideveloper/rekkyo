@@ -11,6 +11,8 @@
   * [PR#23](https://github.com/yujideveloper/rekkyo/pull/23)
 * Change the default branch from master to main
   + [PR#24](https://github.com/yujideveloper/operator_recordable/pull/24)
+* Fix RuboCop offenses
+  * [PR#27](https://github.com/yujideveloper/rekkyo/pull/27)
 
 
 ## 1.1.0 (2022-11-25)
