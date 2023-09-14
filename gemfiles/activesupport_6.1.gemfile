@@ -2,6 +2,13 @@
 
 source "https://rubygems.org"
 
+gem "appraisal", ">= 2.5.0"
+gem "bundler", ">= 2.2.3"
+gem "pry", ">= 0.14.2"
+gem "pry-doc", ">= 1.4.0"
+gem "rake", "~> 13.0"
+gem "rspec", "~> 3.12"
+gem "rubocop", ">= 1.56.3"
 gem "activesupport", "~> 6.1.0"
 
 gemspec path: "../"
