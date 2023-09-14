@@ -75,13 +75,13 @@ RSpec.describe Rekkyo::Type::Member do
     end
 
     context "when other class and same value specified" do
-      let(:other) { "RED" }
+      let(:other) { described_class.dup.new(:RED, "RED") }
 
-      it { is_expected.to be true }
+      it { is_expected.to be false }
     end
 
     context "when other class and other value specified" do
-      let(:other) { "BLUE" }
+      let(:other) { described_class.dup.new(:BLUE, "BLUE") }
 
       it { is_expected.to be false }
     end
