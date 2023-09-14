@@ -10,25 +10,25 @@ RSpec.describe Rekkyo::Type::Member do
   describe "#==" do
     subject { described_class.new(:RED, "#FF0000") == other }
 
-    context "in case of same class, same key, same value" do
+    context "when same class, same key, same value specified" do
       let(:other) { described_class.new(:RED, "#FF0000") }
 
       it { is_expected.to be true }
     end
 
-    context "in case of same class, other key, same value" do
+    context "when case of same class, other key, same value specified" do
       let(:other) { described_class.new(:red, "#FF0000") }
 
       it { is_expected.to be false }
     end
 
-    context "in case of same class, same key, other value" do
+    context "when case of same class, same key, other value specified" do
       let(:other) { described_class.new(:RED, "RED") }
 
       it { is_expected.to be false }
     end
 
-    context "in case of other class" do
+    context "when case of other class specified" do
       let(:other) { Struct.new(:key, :value).new(:RED, "#FF0000") }
 
       it { is_expected.to be false }
@@ -38,49 +38,49 @@ RSpec.describe Rekkyo::Type::Member do
   describe "#match?" do
     subject { described_class.new(:RED, "RED").match?(other) }
 
-    context "in same member" do
+    context "when same member specified" do
       let(:other) { described_class.new(:RED, "RED") }
 
       it { is_expected.to be true }
     end
 
-    context "in same class but other member" do
+    context "when same class but other member specified" do
       let(:other) { described_class.new(:BLUE, "BLUE") }
 
       it { is_expected.to be false }
     end
 
-    context "in String class and same value" do
+    context "when String class and same value specified" do
       let(:other) { "RED" }
 
       it { is_expected.to be true }
     end
 
-    context "in String class and other value" do
+    context "when String class and other value specified" do
       let(:other) { "BLUE" }
 
       it { is_expected.to be false }
     end
 
-    context "in Symbol class and same value" do
+    context "when Symbol class and same value specified" do
       let(:other) { :RED }
 
       it { is_expected.to be true }
     end
 
-    context "in Symbol class and other value" do
+    context "when Symbol class and other value specified" do
       let(:other) { :BLUE }
 
       it { is_expected.to be false }
     end
 
-    context "in other class and same value" do
+    context "when other class and same value specified" do
       let(:other) { "RED" }
 
       it { is_expected.to be true }
     end
 
-    context "in other class and other value" do
+    context "when other class and other value specified" do
       let(:other) { "BLUE" }
 
       it { is_expected.to be false }
