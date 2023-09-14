@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-appraise "activesupport_none" do
+appraise "activesupport_none" do # rubocop:disable Lint/EmptyBlock
 end
 
 appraise "activesupport_6.1" do
