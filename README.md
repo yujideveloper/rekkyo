@@ -52,6 +52,11 @@ Color::RED === Color::BLUE # => false
 Color::RED === :RED        # => true
 Color::RED === "RED"       # => true
 
+Color::RED.match?(Color::RED)  # => true
+Color::RED.match?(Color::BLUE) # => false
+Color::RED.match?(:RED)        # => true
+Color::RED.match?("RED")       # => true
+
 case "RED"
 when Color::RED   then "#FF0000"
 when Color::BLUE  then "#00FF00"
@@ -86,6 +91,11 @@ Color::RED === Color::RED  # => true
 Color::RED === Color::BLUE # => false
 Color::RED === :"#FF0000"  # => true
 Color::RED === "#FF0000"   # => true
+
+Color::RED.match?(Color::RED)  # => true
+Color::RED.match?(Color::BLUE) # => false
+Color::RED.match?(:"#FF0000")  # => true
+Color::RED.match?("#FF0000")   # => true
 
 case "#FF0000"
 when Color::RED   then "RED"
