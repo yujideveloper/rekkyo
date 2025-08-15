@@ -8,7 +8,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 gem "appraisal", ">= 2.5.0"
-gem "bundler", ">= 2.7.1"
 gem "pry", ">= 0.14.2"
 gem "pry-doc", ">= 1.4.0"
 gem "rake", "~> 13.3"
