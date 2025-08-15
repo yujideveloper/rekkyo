@@ -15,6 +15,10 @@
   + [PR#24](https://github.com/yujideveloper/rekkyo/pull/24)
 * Fix RuboCop offenses
   * [PR#27](https://github.com/yujideveloper/rekkyo/pull/27)
+* Fix wrong PR link
+  * [PR#28](https://github.com/yujideveloper/rekkyo/pull/28)
+* Add document for `Member#match?`
+  * [PR#29](https://github.com/yujideveloper/rekkyo/pull/29)
 
 
 ## 1.1.0 (2022-11-25)
