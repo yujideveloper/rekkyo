@@ -7,6 +7,8 @@
   * [PR#26](https://github.com/yujideveloper/rekkyo/pull/26)
 * Add Ruby 3.3/3.4 support and ActiveSupport 7.1/7.2/8.0 support
   * [PR#30](https://github.com/yujideveloper/rekkyo/pull/30)
+* Drop ActiveSupport 6.1 support
+  * [PR#31](https://github.com/yujideveloper/rekkyo/pull/31)
 
 ### Misc
 * Test without activesupport
