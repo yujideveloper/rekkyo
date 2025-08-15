@@ -8,11 +8,11 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 gem "appraisal", ">= 2.5.0"
-gem "bundler", ">= 2.2.3"
+gem "bundler", ">= 2.7.1"
 gem "pry", ">= 0.14.2"
 gem "pry-doc", ">= 1.4.0"
-gem "rake", "~> 13.0"
-gem "rspec", "~> 3.12"
-gem "rubocop", ">= 1.56.3"
-gem "rubocop-rake", ">= 0.6.0"
-gem "rubocop-rspec", ">= 2.24.0"
+gem "rake", "~> 13.3"
+gem "rspec", "~> 3.13"
+gem "rubocop", "~> 1.79.0"
+gem "rubocop-rake", ">= 0.7.1"
+gem "rubocop-rspec", ">= 3.6.0"
